@@ -6,7 +6,7 @@ This repository is the published Single Source of Truth for CEK-framework **law*
 
 Optional drafts are not law until adopted by amendment. Editorial clarity that does not change meaning is not an amendment.
 
-Provenance (not a second living CORE): text distilled from bitplorer/cek-framework commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f).
+bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT. [IMPLEMENTATION.md](IMPLEMENTATION.md) is encoding notes, not locked law.
 
 ---
 
@@ -57,7 +57,17 @@ Implementations that claim CEK alignment must honor:
 | Security | [LAW.md](LAW.md) § security, § bootstrap |
 | Dual vocabulary ban | [VOCABULARY.md](VOCABULARY.md) — tutorial gloss once; no second official names |
 
-**Stability.** Primary kernel names do not rename. Same name keeps the same intention. New power is additive or versioned. Authority fails closed. Ending an Activity or revoking a Cap has a defined reverse story. Kernel changes follow this process.
+**Stability guarantees.** Primary kernel names do not rename. Same name keeps the same intention. New power is additive or versioned. Authority fails closed. Ending an Activity or revoking a Cap has a **defined reverse story**: inverse where possible, else compensation under a recovery Cap, else an explicit non-reversible mark. That story is not a promise of perfect undo. Kernel changes follow this process.
+
+**Stability non-guarantees**
+
+| Non-guarantee | Note |
+|---------------|------|
+| Eternal domain Op catalogs | Domains evolve at L5 |
+| Single implementation forever | Multiple Host/Peer implementations allowed |
+| Perfect undo of the external world | Compensation and non-reversible marks exist |
+| Transport or crypto agility details | Conceptual binds matter; algorithms may evolve |
+| Absence of L7 bugs | App handlers can still be wrong *under* Caps |
 
 ---
 

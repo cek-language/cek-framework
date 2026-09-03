@@ -17,7 +17,7 @@ One concept, one name (A10, K10). Tutorial gloss once is allowed; it does not cr
 |------|---------|
 | **Intent** | Sealed ask to change something |
 | **Cap** | Permission to submit that Intent |
-| **Ops** | Ordered changes that may be carried out; identity is `(ns, name)` |
+| **Ops** | Ordered changes that may be carried out |
 | **Result** | Answer to an Intent |
 | **Activity** | Bounded work that starts, ends, and can be reversed |
 | **Context** | What an Activity is allowed to see (not ambient authority) |

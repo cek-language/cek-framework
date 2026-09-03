@@ -22,7 +22,7 @@ This repository is the **canonical published Single Source of Truth** for CEK-fr
 | **Intent** | Sealed ask under a Cap | **submit** | Send an Intent under a Cap |
 | **Host** | Verifies Cap; decides; returns Result | **apply** | Carry out Ops |
 | **Peer** | Applies Ops only | **inject** | Declare Activity requirements |
-| **Ops** | Ordered effects as data; identity is `(ns, name)` | **limit** | Restrict what may be seen or done |
+| **Ops** | Ordered effects as data | **limit** | Restrict what may be seen or done |
 | **Result** | Host answer to an Intent | **isolate** | Separate a Context slice |
 | **Activity** | Bounded work; reverse on end | **reverse** | Undo lineage / end cleanly |
 | **Context** | Mediated visibility, not ambient authority | | |
@@ -47,9 +47,9 @@ Constitutional. Features may not relax them without [CHARTER](CHARTER.md) amendm
 | **A5** | Fail closed | Failed Cap verification, missing required once-store, or required lineage write failure refuses the action. |
 | **A6** | Trace ≠ authority | A trace only groups Intents; it never grants permission. |
 | **A7** | Peer unprivileged | A Peer applies Ops; it does not mint root Caps or invent business truth. |
-| **A8** | Attenuation monotonic | `limit` and `isolate` only narrow; they never widen. |
-| **A9** | Composition authorized | Opening an Activity or loading a part is Cap-gated (or explicit Host bootstrap). |
-| **A10** | One concept, one name | No kernel synonyms; docs and code use the same primary names. |
+| **A8** | Attenuation monotonic | limit and isolate only narrow authority or visibility; they never widen it. |
+| **A9** | Composition authorized | Opening an Activity or loading a part is Cap-gated (or uses an explicit minimal bootstrap root). |
+| **A10** | One concept, one name | The kernel has no synonyms; documentation and code use the same primary names. |
 
 ---
 
@@ -76,6 +76,6 @@ L5–L7 and optional L6 that does not relax axioms may move without amendment. A
 | Frozen names, axioms, kill criteria | Wire codecs, crypto, or domain catalogs |
 | What “correct CEK” means | A surface programming language |
 
-Kernels implement elsewhere. Domain apply catalogs stay L5 — they are not Hosts.
+Kernels implement elsewhere. Domain apply catalogs stay L5 — they are not Hosts. Encoding notes (not law): [IMPLEMENTATION.md](IMPLEMENTATION.md).
 
-Provenance (not living CORE): distilled from bitplorer/cek-framework [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f).
+bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT.

@@ -2,7 +2,7 @@
 
 Canonical published law of the Cap-Effect Meta-Language (CEK). Not a package. Not a kernel. Amendments: [CHARTER.md](CHARTER.md). Names: [VOCABULARY.md](VOCABULARY.md). Alignment: [KILL.md](KILL.md).
 
-Provenance (not living CORE): distilled from bitplorer/cek-framework [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f), CORE 00–27. Unique rules preserved; files not copied verbatim. No new axioms.
+bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT. Unique rules from that freeze (CORE 00–27) are preserved here; files are not copied verbatim. No new axioms.
 
 ---
 
@@ -60,7 +60,7 @@ Constitutional. Features may not relax them without charter amendment.
 | **A5** | Fail closed | Failed Cap verification, missing required once-store, or required lineage write failure refuses the action. |
 | **A6** | Trace ≠ authority | A trace only groups Intents; it never grants permission. |
 | **A7** | Peer unprivileged | A Peer applies Ops; it does not mint root Caps or invent business truth. |
-| **A8** | Attenuation monotonic | `limit` and `isolate` only narrow authority or visibility; they never widen it. |
+| **A8** | Attenuation monotonic | limit and isolate only narrow authority or visibility; they never widen it. |
 | **A9** | Composition authorized | Opening an Activity or loading a part is Cap-gated (or uses an explicit minimal bootstrap root). |
 | **A10** | One concept, one name | The kernel has no synonyms; documentation and code use the same primary names. |
 
@@ -180,7 +180,7 @@ End is revoke Cap and/or end Activity → reverse lineage.
 
 ## 6. Intent, Result, Ops
 
-Conceptual fields. Encodings free if binds hold. An Op’s identity is the **`(ns, name)` pair**. Domain meaning lives in L5; law does not fix the catalog.
+Conceptual fields. Encodings free if binds hold. Domain meaning lives in L5; law does not fix the catalog.
 
 ### Intent
 
@@ -214,7 +214,7 @@ Empty Ops on success is allowed (decision, no carry-out).
 
 **Projection.** Host may project internal outcomes to Ops the Peer’s profile can apply, always able to fall back to Baseline. Same Intent outcome + same profile + same projection rules → projection should be deterministic.
 
-New domain Ops: define `(ns, name)` in an L5 namespace; document Baseline lowering (equivalent classic Ops or safe no-op); advertise in profile; Host projects intersection; add conformance for both paths.
+New domain Ops: define the Op in an L5 namespace; document Baseline lowering (equivalent classic Ops or safe no-op); advertise in profile; Host projects intersection; add conformance for both paths.
 
 ---
 
@@ -650,21 +650,4 @@ Vectors version with law version. Major version adds a suite; Baseline suite sta
 
 **Not conformance:** performance SLOs, specific crypto, full IFC proofs, product UX.
 
----
-
-## Appendix — implementation snapshot (not law)
-
-Encoding observations for [cek-runtime](https://github.com/bitplorer/cek-runtime) commit [`50fe2af2c615ab31b35b24314915c2fb2635029f`](https://github.com/bitplorer/cek-runtime/tree/50fe2af2c615ab31b35b24314915c2fb2635029f). These are not kernel nouns and do not amend this law.
-
-| Law | That snapshot |
-|-----|----------------|
-| **trace** groups Intents; optional trace on lineage | Intent may carry a trace field; no store, echo, or grouping API |
-| Lineage under Cap and/or **Activity** | Lineage and reverse keyed by an Activity identifier field |
-| profile = declared apply ability | Session apply-set encoded as a closed set of `(ns, name)` pairs (not a Cap) |
-| L2 Context / inject / isolate / part | Kernel surface centers verify, once, idempotency, project, lineage, receipts, reverse |
-| Recovery Cap | Reverse class includes compensation; Host mint exists |
-| Cross-Host Caps | Separate Host instances; dual-speak is law-generation accept window |
-| Bootstrap | Host mint is the Host bootstrap / policy path |
-| Baseline classic apply | Common `(ns, name)` pairs in that catalog include `kv.set`, `kv.delete`, `log.append`; UI domain pairs include `ui.dom.morph`, `ui.dom.restore` |
-
-Field names and session encodings are implementation. The kernel nouns remain **Activity**, **trace**, **profile**, **Cap**, **Baseline**.
+Encoding observations for one kernel snapshot are in [IMPLEMENTATION.md](IMPLEMENTATION.md). They are not law.
