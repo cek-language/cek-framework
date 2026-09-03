@@ -2,9 +2,9 @@
 
 This repository is the published Single Source of Truth for CEK-framework **law**.
 
-**Locked here:** [LAW.md](LAW.md) (axioms, layers, Host/Peer, Cap, lineage, Baseline, hardening), [VOCABULARY.md](VOCABULARY.md), [KILL.md](KILL.md), this file.
+**Locked here:** [LAW.md](LAW.md) (axioms, layers, Host/Peer, Cap, lineage, Baseline, hardening), [README.md](README.md) (entry; the A1–A10 table must remain identical to LAW §2), [VOCABULARY.md](VOCABULARY.md), [KILL.md](KILL.md), this file.
 
-Optional drafts are not law until adopted by amendment. Editorial clarity that does not change meaning is not an amendment.
+Optional drafts are not law until adopted by amendment. Editorial clarity that does not change meaning is not an amendment. README axiom-table drift is not editorial.
 
 bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT. [IMPLEMENTATION.md](IMPLEMENTATION.md) is encoding notes, not locked law.
 

@@ -2,7 +2,7 @@
 
 **Who may change a shared world, how the change is listed, and how it is undone.**
 
-Shared-world change is Cap-only, Ops-only, and honestly reversible. Official name: **CEK**. **Ops** is the ordered effect list (data), not the language name.
+Shared-world change is Cap-only and Ops-only, with a defined reverse story (lineage, compensation, or a non-reversible mark) — not perfect undo of the external world. Official name: **CEK**. **Ops** is the ordered effect list (data), not the language name.
 
 This repository is the **canonical published Single Source of Truth** for CEK-framework **law**. It is not a package, crate, or kernel. Implementations claim alignment against this law; they do not amend it by shipping code.
 
