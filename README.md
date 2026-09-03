@@ -6,11 +6,11 @@ CEK exists so this question stays answerable: *who authorized this write, and ho
 
 Shared-world change is **Cap-only**, **Ops-only**, and honestly reversible.
 
-This repository is **law and vocabulary only** — not a package, crate, or runtime. It does not ship Host or Peer kernels. Implementations that claim CEK alignment live elsewhere and must satisfy this law; they do not amend it by shipping code.
+This repository is a **reader path** — human-readable overview, vocabulary, and kill criteria. It is not a package, crate, runtime, or a second CORE.
 
 The official name of the law is **CEK** (Cap-Effect Meta-Language). **Ops** is the ordered effect list (data), not the language name.
 
-Source of the locked charter: [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) (`main`, CORE 00–27). This repo restates that law in human-readable form. If a sentence here and that charter diverge, **the charter wins**.
+**Reader path, not a second CORE.** The locked charter is [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) (CORE 00–27). If a sentence here and that CHARTER/CORE diverge, **CORE wins**. This distill is not independently amendable law. Amendments belong in bitplorer/cek-framework ([CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md)). A mechanical drift check against CORE is out of scope in this repo; it does not redefine K14.
 
 Build kernels: [cek-runtime](https://github.com/bitplorer/cek-runtime) · [cek-python](https://github.com/bitplorer/cek-python) · [cek-hw](https://github.com/bitplorer/cek-hw) (L5 apply, not a Host).
 
@@ -95,13 +95,14 @@ Full statements, notes, and fail-closed rules: [LAW.md](LAW.md).
 
 | This repo **is** | This repo **is not** |
 |------------------|----------------------|
-| Frozen vocabulary and axioms | An npm / cargo / pip library |
-| What “correct CEK” means | Runnable Host / Peer |
-| Design review checklist | Wire codecs, crypto, or UI widgets |
+| A reader path (map) over frozen vocabulary and axioms | A second CORE or independently amendable charter |
+| A design-review checklist | An npm / cargo / pip library |
+| Pointers to CHARTER / CORE / STABILITY | Runnable Host / Peer, wire codecs, or UI widgets |
 
 | | Owns | Does *not* own |
 |--|------|----------------|
-| **This repo** | Meanings, axioms, frozen names, Host/Peer *role* law, kill criteria | Runnable kernels, wire codecs, crypto, Op catalogs, crates, CI |
+| **bitplorer/cek-framework CHARTER/CORE** | Meanings, axioms, frozen names, Host/Peer *role* law, kill criteria | Runnable kernels |
+| **This repo** | Reader-path distill of that charter | Independently amendable law |
 | **Host** | Mint, verify, lineage, Result | Apply as mutation; Peer-said “I am allowed” |
 | **Peer** | Apply Ops under profile | Root mint; business truth |
 | **Cap** | Permission to submit a class of Intent | Session, TLS, trace, Activity lifetime |
@@ -127,19 +128,20 @@ Full statements, notes, and fail-closed rules: [LAW.md](LAW.md).
 | Path | Role |
 |------|------|
 | [README.md](README.md) | Overview, axioms, boundary, non-goals |
-| [LAW.md](LAW.md) | Human-readable law restated from CORE 00–27 |
+| [LAW.md](LAW.md) | Reader-path distill of CORE 00–27 (CORE wins) |
 | [VOCABULARY.md](VOCABULARY.md) | Frozen terms and rejected synonyms |
-| [KILL.md](KILL.md) | Alignment / kill criteria |
+| [KILL.md](KILL.md) | Alignment / kill criteria (from charter KILL-CRITERIA) |
 
 ---
 
 ## Implementation boundary
 
-This repo states **law**. It does not ship kernels.
+This repo does not ship kernels. Law lives in bitplorer/cek-framework CHARTER/CORE.
 
 | Here | Elsewhere |
 |------|-----------|
-| Meanings, axioms, kill criteria | This repository |
+| Reader-path distill | This repository |
+| Meanings, axioms, kill criteria (authority) | [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) |
 | Build Host / Peer, contract, CI | [cek-runtime](https://github.com/bitplorer/cek-runtime) |
 | Python Host + surface | [cek-python](https://github.com/bitplorer/cek-python) |
 | L5 `hw.*` apply (not a Host) | [cek-hw](https://github.com/bitplorer/cek-hw) |
@@ -148,23 +150,39 @@ Exactly two L1 kernels: **Host** (decide) and **Peer** (apply). There is no thir
 
 A process may embed both roles as separate boundaries. Mint must not live inside pure apply. Many implementations may exist; multiplicity does not add roles.
 
-L0–L2 are law. L4–L7 (profiles, domain Ops, optional policy, product logic) may move without amending axioms. Encoding of Caps, transports, and crate layout are implementation — not law.
+**Layers** ([CORE/05](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/05-layers.md)):
 
-Implementation gaps in today’s reference runtime are labeled **IMPLEMENTATION NOTE** in [LAW.md](LAW.md). They are not law. In particular, `cek-runtime` is narrower than law in some areas (trace is a field only; lineage is keyed by `activity_id`; optional stamp is session apply-set / profile encoding).
+```text
+L0  Law         axioms + Baseline
+L1  Kernels     Host · Peer
+L2  Bound work  Activity · Context · inject · limit · isolate · lineage · reverse · part
+L3  Correlate   trace
+L4  Negotiate   profile
+L5  Drivers     domain Ops
+L6  Policy      optional
+L7  Application product logic
+```
+
+L5–L7 (and optional L6 policy that does not relax axioms) may move without charter amendment. Changing **kernel meaning** — including **trace** (L3) — is not a silent profile move: [CORE/12](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/12-change-law.md) requires major version + dual-speak + conformance. Encoding of Caps, transports, and crate layout are implementation, not CORE nouns.
+
+Freeze, amendment process, [STABILITY.md](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/STABILITY.md) binding, and what requires amendment (including a third conceptual parent that redefines L0–L2, and collapsing Host and Peer into one privileged role) are in [CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md) at that commit. This repo does not ship a second CHARTER.md.
+
+Runtime encoding observations are labeled **IMPLEMENTATION NOTE** in [LAW.md](LAW.md) and [VOCABULARY.md](VOCABULARY.md). They are not law.
 
 ---
 
 ## Explicit non-goals
 
-This documentation (and the core law it restates) does **not**:
+This reader path (and the CORE it distills) does **not**:
 
 - Choose specific Cap cryptography
 - Mandate one process topology (browser/server, in-process, WASM, …)
 - Define all domain Ops
 - Replace general-purpose programming languages
 - Freeze implementation languages, crate layout, CI, or isolation technology
-- Treat wire field paths, stamps, or session encodings as kernel concepts
+- Treat wire field paths or session encodings as kernel concepts
 - Ship runnable Host / Peer code
+- Independently amend CHARTER / CORE / kill criteria
 
 Those belong in implementation repos. They must not silently redefine Intent, Cap, or Baseline.
 

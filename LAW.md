@@ -1,10 +1,10 @@
 # CEK law
 
-Human-readable restatement of the locked Cap-Effect Meta-Language (CEK) law.
+Human-readable distill of the locked Cap-Effect Meta-Language (CEK) law.
 
-This is **documentation**, not a package and not a redesign. It does not invent axioms. Unique rules from [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) CORE 00–27 (`main`) are preserved here in prose and tables. CORE files are not copied verbatim.
+This is a **reader path**, not a package, not a redesign, and **not a second CORE**. It does not invent axioms. Unique rules from [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) CORE 00–27 at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) are preserved here in prose and tables. CORE files are not copied verbatim.
 
-If this page and that charter diverge, **the charter wins**.
+**CORE wins.** If this page and CHARTER/CORE diverge, the charter is authority. This distill is not independently amendable law. Amendments belong in bitplorer/cek-framework ([CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md): freeze, amendment process, [STABILITY.md](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/STABILITY.md) binding). A mechanical drift check against CORE is out of scope here; it does not redefine K14.
 
 Frozen names: [VOCABULARY.md](VOCABULARY.md). Alignment gate: [KILL.md](KILL.md). Overview: [README.md](README.md).
 
@@ -260,7 +260,7 @@ End is revoke Cap and/or end Activity → reverse lineage.
 | trace | No | Yes | No |
 | Activity | No | No | Yes (reverse lineage on end) |
 
-A stamp, session, TLS identity, receipt, or trace is **not** a Cap.
+A session, TLS identity, receipt, or trace is **not** a Cap.
 
 Clock skew on Cap expiry: fail closed on verify if outside the window under **Host** clock policy.
 
@@ -357,7 +357,7 @@ Activity is **not** a Cap (it does not by itself allow asks), **not** a trace (i
 
 **part**s load into an Activity under Caps (A9). Loading and unloading parts are themselves accountable composition events.
 
-Abandoned Activity: end → reverse (optional time-box policy). Completing an apply (for example a DOM morph) does **not** auto-reverse.
+Abandoned Activity: end → reverse (optional time-box policy). ([CORE/24](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/24-moving-parts-and-corners.md))
 
 ### Context
 
@@ -459,13 +459,12 @@ The concept is **trace**. Implementations may assign identifiers to traces; iden
 
 ### IMPLEMENTATION NOTE — cek-runtime trace and lineage
 
-In [cek-runtime](https://github.com/bitplorer/cek-runtime) as of the `main` tree read for this documentation:
+Not law. Snapshot of [cek-runtime](https://github.com/bitplorer/cek-runtime) at commit [`50fe2af2c615ab31b35b24314915c2fb2635029f`](https://github.com/bitplorer/cek-runtime/tree/50fe2af2c615ab31b35b24314915c2fb2635029f):
 
 - `Intent.trace` is currently **field-only**. There is no `TraceStore`, echo, or grouping API. The Host submit path does not read `trace` to authorize, group, or undo.
-- Runtime lineage uses **`activity_id`**. Lineage commit and reverse (`end_activity`) are keyed by Activity identity. `LineageEntry` stores `activity_id`, not a trace association.
-- That is a **narrower encoding than law**. Law still requires optional trace association on lineage *conceptually*. Absence of grouping in the runtime is not a license to treat `activity_id` as Cap or as trace.
+- Lineage commit and reverse (`end_activity`) are keyed by Activity identity (`activity_id`). `LineageEntry` stores that identifier, not a stored trace association.
 
-The runtime may be narrower than law in other L2 surfaces as well (full Context mediation, inject, isolate, part load as first-class Host APIs). Narrower is allowed; axiom relaxation is not.
+CORE still distinguishes **trace** (correlation) from **Activity** (lifetime undo) and still conceptually allows optional trace association on a lineage entry ([CORE/09](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/09-lineage-reverse.md), [CORE/10](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/10-trace.md)). This snapshot’s encoding does not merge those concepts, treat Activity identity as Cap, or relax A6.
 
 ---
 
@@ -530,7 +529,7 @@ Rules:
 
 ### IMPLEMENTATION NOTE — optional stamp
 
-In `cek-runtime`, optional **stamp** is session apply-set / profile encoding: a closed `PairSet` of `(ns, name)` pairs used as the Peer apply-set (Baseline ∪ UI seed as a default stamp source). Stamp is **not** a Cap, **not** a kernel noun, and **not** permission. See [VOCABULARY.md](VOCABULARY.md).
+Not law. In [cek-runtime](https://github.com/bitplorer/cek-runtime) at commit [`50fe2af2c615ab31b35b24314915c2fb2635029f`](https://github.com/bitplorer/cek-runtime/tree/50fe2af2c615ab31b35b24314915c2fb2635029f), optional **stamp** is session apply-set / profile encoding: a closed `PairSet` of `(ns, name)` pairs used as the Peer apply-set (Baseline ∪ UI seed as a default stamp source). Stamp is **not** a Cap, **not** a kernel noun, and **not** permission. See [VOCABULARY.md](VOCABULARY.md).
 
 ---
 
@@ -719,7 +718,6 @@ Refuse (zero mutate Ops) when:
 - Idempotency store down when bind is required
 - Required lineage cannot be written
 - Attenuation would widen
-- Empty / degenerate identity that would make authority unclear (conceptual: invalid Cap)
 
 Ignore (safe) when:
 
@@ -793,9 +791,11 @@ MOBILE (may move without charter amendment)
   transports · optional receipts/idempotency · driver quality
 ```
 
-When something moves, it moves **above** L2 or in encoding — never by silently redefining Intent, Cap, or Baseline.
+When something moves, it moves **above** L2 or in encoding — never by silently redefining Intent, Cap, or Baseline. **trace** is L3; changing its meaning is kernel meaning ([CORE/12](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/12-change-law.md): major version + dual-speak + conformance), not a silent L4–L7 move.
 
 **Doctrine.** Freeze the law; default every corner; let only the surface move — and when it moves, lower to Baseline or refuse, never ambient-allow.
+
+Amendment process, freeze statement, [STABILITY.md](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/STABILITY.md) binding, and the list of what requires charter amendment (including a third conceptual parent that redefines L0–L2, and collapsing Host and Peer into one privileged role) are in [CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md). This distill does not replace that file.
 
 ### Change classification
 
@@ -1023,7 +1023,7 @@ Any claim of **CEK-compatible** or **CEK-aligned** must demonstrate all rows bel
 
 **Baseline lowering** and **Reverse on end** are mandatory for compatibility claims (not optional theater).
 
-Optional high-assurance families: idempotent submit (production profiles, recommended); apply receipt into lineage (multi-Peer / high-assurance); hash-chained lineage (audit-focused). CORE 25–27 freeze the *conceptual* rules for receipts, idempotency bind, and recovery Cap (optional for Baseline). Remaining unfrozen proposal items (effect class, strict reverse profile, time-boxed Activities, hash-chained lineage, and related) are not law until adopted.
+Optional high-assurance families: idempotent submit (production profiles, recommended); apply receipt into lineage (multi-Peer / high-assurance); hash-chained lineage (audit-focused). See [CORE/19](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/19-conformance.md). CORE 25–27 freeze the *conceptual* rules for receipts, idempotency bind, and recovery Cap (optional for Baseline). Drafts under `PROPOSALS/` are not law until adopted ([CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md)).
 
 Vectors are versioned alongside law version. Major law version adds a new vector suite; Baseline suite remains green during dual-speak. Implementations claim conformance only to published suites. Kill criteria: [KILL.md](KILL.md).
 
@@ -1033,10 +1033,10 @@ Vectors are versioned alongside law version. Major law version adds a new vector
 
 ## 24. Implementation boundary
 
-This repository states **law**. Implementations claim alignment without amending the charter.
+This repository is a **reader path**. Implementations claim alignment against bitplorer/cek-framework CHARTER/CORE without amending that charter by shipping code.
 
-| In this law | In a kernel / runtime |
-|-------------|----------------------|
+| In CHARTER / CORE | In a kernel / runtime |
+|-------------------|----------------------|
 | Axioms, vocabulary, layers | Kernel languages |
 | Host / Peer *roles*; Cap / Intent / Ops *concepts* | Crate and module layout |
 | Lineage, reverse, Baseline, profile as law | Cap as a typed state machine in code |
@@ -1044,25 +1044,23 @@ This repository states **law**. Implementations claim alignment without amending
 | Encoding-free conceptual shapes | Schema files, vector JSON, crypto / store choices |
 | | How L7 callers reach Host (IPC, HTTP, in-process) |
 
-Rename of a frozen concept, change of an axiom, or a third L1 role is a **charter amendment** in the source-of-truth charter — not a runtime convenience.
+Rename of a frozen concept, change of an axiom, a third L1 role, a third conceptual parent that redefines L0–L2, or collapsing Host and Peer into one privileged role is a **charter amendment** in [CHARTER](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHARTER.md) — not a runtime convenience.
 
-### IMPLEMENTATION NOTE — runtime may be narrower than law
+### IMPLEMENTATION NOTE — cek-runtime snapshot
 
-[cek-runtime](https://github.com/bitplorer/cek-runtime) is the reference Host / Peer implementation. It must not weaken fail-closed Cap verify or Peer no-mint.
+Not law. Snapshot of [cek-runtime](https://github.com/bitplorer/cek-runtime) at commit [`50fe2af2c615ab31b35b24314915c2fb2635029f`](https://github.com/bitplorer/cek-runtime/tree/50fe2af2c615ab31b35b24314915c2fb2635029f). That tree must not weaken fail-closed Cap verify or Peer no-mint.
 
-Known narrower (or encoding-specific) areas relative to this law, verified against that repo’s `main` at documentation time:
-
-| Law | Runtime today |
-|-----|----------------|
+| CORE concept | Encoding / surface in that snapshot |
+|--------------|-------------------------------------|
 | **trace** groups related Intents; optional trace association on lineage | `Intent.trace` is field-only; no `TraceStore` / echo / grouping |
 | Lineage under Cap **and/or** Activity; optional trace on the entry | Lineage keyed by `activity_id`; reverse via `end_activity` |
 | profile as declared apply ability | Optional **stamp** = session `PairSet` / `apply_set` encoding (not a Cap) |
-| Activity, Context, inject, limit, isolate, part as L2 law | Kernel focuses on Cap verify, once, idempotency, project, lineage, receipts, reverse; full Context / part machinery is not the whole L2 surface |
-| Recovery Cap as ordinary Cap for compensation | Reverse classes include `Compensation`; Host mint exists; standing recovery-Cap protocol is not the full CORE/27 narrative |
-| Cross-Host Caps with explicit shared verify | Separate Host instances; dual-speak is `law_generation` accept window, not automatic foreign-Host trust |
+| Activity, Context, inject, limit, isolate, part as L2 law | Kernel focuses on Cap verify, once, idempotency, project, lineage, receipts, reverse |
+| Recovery Cap as ordinary Cap for compensation | Reverse classes include `Compensation`; Host mint exists |
+| Cross-Host Caps with explicit shared verify | Separate Host instances; dual-speak is `law_generation` accept window |
 | Bootstrap as documented Host-only origin | `Host::mint` is the Host bootstrap / policy path |
 
-Narrower implementation is allowed. Treating a gap as a new axiom, merging trace into Activity, or promoting stamp to Cap is not.
+These rows are encoding observations at that commit. They do not amend CORE, merge trace into Activity, or promote stamp to Cap.
 
 ---
 

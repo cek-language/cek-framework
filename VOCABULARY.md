@@ -8,11 +8,10 @@ The official name of the law is **CEK** (Cap-Effect Meta-Language).
 - **Cap** is authority (permission to submit a class of Intent).
 - **trace** is correlation only. It never grants, executes, or undoes.
 - **flow** is rejected as a primary law name.
-- A **stamp** is not a Cap. Stamp is an implementation encoding (session apply-set / profile), not a kernel noun.
 
 If documentation or code needs a second word for one of these jobs, that is a naming defect (axiom **A10**, kill criterion **K10**), not a synonym.
 
-Source: [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) `CORE/04-vocabulary.md`, `CORE/00-overview.md`, `META/04-naming-law.md`, `CHOICES.md`, `GLOSSARY.md`.
+**Reader path.** Source: [bitplorer/cek-framework](https://github.com/bitplorer/cek-framework) commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) — [`CORE/04-vocabulary.md`](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/04-vocabulary.md), [`CORE/00-overview.md`](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CORE/00-overview.md), [`META/04-naming-law.md`](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/META/04-naming-law.md), [`CHOICES.md`](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/CHOICES.md), [`GLOSSARY.md`](https://github.com/bitplorer/cek-framework/blob/eca06befbd0f30e93c47481f7aab3fae66d5a57f/GLOSSARY.md). If this page and CORE diverge, **CORE wins**. This distill is not independently amendable law.
 
 ---
 
@@ -84,14 +83,13 @@ Every kernel noun and verb maps to exactly one row. **trace** does not participa
 
 ---
 
-## Cap vs trace vs Activity vs stamp
+## Cap vs trace vs Activity
 
 | Concept | Grants permission? | Groups steps? | Owns lifetime undo? |
 |---------|--------------------|---------------|---------------------|
 | **Cap** | Yes | No | Via lineage when revocable |
 | **trace** | No | Yes | No |
 | **Activity** | No | No | Yes (reverse lineage on end) |
-| **stamp** | No | No | No |
 
 **trace** answers: *which asks belong together?* It does not answer *who is allowed?*, *what may be applied?*, or *what must be undone?*
 
@@ -134,25 +132,23 @@ The framework names **concepts**. Implementations may use identifiers and token 
 | Level | Example |
 |-------|---------|
 | Concept | **trace**, **Cap**, **Activity**, **profile** |
-| Runtime / wire identifier | a `trace` string, Cap token bytes, `activity_id`, `apply_set` FQ list |
+| Runtime / wire identifier | an identifier string that refers to a trace, Cap token bytes, an Activity id |
 
 Schemas may define identifiers without elevating them into the intention table. Field paths are not law.
 
-### IMPLEMENTATION NOTE — stamp is not Cap
+### IMPLEMENTATION NOTE — encoding snapshot (cek-runtime)
 
-In [cek-runtime](https://github.com/bitplorer/cek-runtime), **stamp** is session apply-set / profile encoding: a closed set of `(ns, name)` pairs (`PairSet`) used as the Peer’s apply-set source. That encoding is not a kernel concept, not authority, and not a Cap. Profile never grants Cap authority.
+Not law. Snapshot of [cek-runtime](https://github.com/bitplorer/cek-runtime) at commit [`50fe2af2c615ab31b35b24314915c2fb2635029f`](https://github.com/bitplorer/cek-runtime/tree/50fe2af2c615ab31b35b24314915c2fb2635029f).
 
-### IMPLEMENTATION NOTE — trace vs activity_id
+**stamp** is session apply-set / profile encoding: a closed set of `(ns, name)` pairs (`PairSet`) used as the Peer’s apply-set source. That encoding is not a kernel concept, not authority, and not a Cap. Profile never grants Cap authority.
 
-Law: **trace** correlates Intents; **Activity** bounds work and owns reverse. They are different concepts.
-
-In `cek-runtime` today:
+**trace** vs Activity identity in that snapshot:
 
 - `Intent.trace` is a field only. There is no `TraceStore`, echo, or grouping API.
-- Lineage is keyed by `activity_id`. Reverse runs on `end_activity`.
-- `LineageEntry` records `activity_id`, not a stored trace association.
+- Lineage is keyed by an Activity identifier (`activity_id`). Reverse runs on `end_activity`.
+- `LineageEntry` records that Activity identifier, not a stored trace association.
 
-That narrower encoding does not merge trace into Activity, and does not make `activity_id` a Cap.
+Those encodings do not merge trace into Activity, and do not make an Activity identifier a Cap.
 
 ---
 
