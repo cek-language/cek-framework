@@ -69,6 +69,7 @@ These three are not interchangeable. Read the comparison; this page does not cop
 ## Next
 
 - Why the splits exist: [EXPLAIN.md](EXPLAIN.md) · [layers](diagrams/05-layers.svg)
+- Topology / multiplicity (Host/Peer across devices): [TOPOLOGY.md](TOPOLOGY.md)
 - Submit / apply order (not law): [PSEUDOCODE.md](PSEUDOCODE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
 - Map: [README.md](README.md)
 - How-to: [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md)

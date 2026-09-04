@@ -46,6 +46,8 @@ The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A7). Collapsing Host
 
 Alignment gate: [KILL.md K3](KILL.md#instant-disqualification).
 
+Placement across processes and devices: [TOPOLOGY.md](TOPOLOGY.md).
+
 ---
 
 ## Why trace ≠ Activity
@@ -91,6 +93,7 @@ The stack is [LAW.md §3](LAW.md#3-layers). This page does not restate it.
 ## Next
 
 - Tutorial walk: [START.md](START.md)
+- Topology / multiplicity: [TOPOLOGY.md](TOPOLOGY.md)
 - Map: [README.md](README.md)
 - How-to: [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md)
 - Law: [LAW.md](LAW.md)
