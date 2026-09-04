@@ -2,9 +2,9 @@
 
 This repository is the published Single Source of Truth for CEK-framework **law**.
 
-**Locked here:** [LAW.md](LAW.md) (axioms, layers, Host/Peer, Cap, lineage, Baseline, hardening), [README.md](README.md) (entry; the A1–A10 table must remain identical to LAW §2), [VOCABULARY.md](VOCABULARY.md), [KILL.md](KILL.md), this file.
+**Locked here:** [LAW.md](LAW.md) (axioms, layers, Host/Peer, Cap, lineage, Baseline, hardening), [README.md](README.md) (entry map; axioms live in LAW §2 — README must not drift from LAW), [VOCABULARY.md](VOCABULARY.md), [KILL.md](KILL.md), this file.
 
-Optional drafts are not law until adopted by amendment. Editorial clarity that does not change meaning is not an amendment. README axiom-table drift is not editorial.
+Optional drafts are not law until adopted by amendment. Editorial clarity that does not change meaning is not an amendment. A competing A1–A10 table or axiom restatement in README is not editorial.
 
 bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT. [IMPLEMENTATION.md](IMPLEMENTATION.md) is encoding notes, not locked law.
 
@@ -57,9 +57,11 @@ Implementations that claim CEK alignment must honor:
 | Security | [LAW.md](LAW.md) § security, § bootstrap |
 | Dual vocabulary ban | [VOCABULARY.md](VOCABULARY.md) — tutorial gloss once; no second official names |
 
-**Stability guarantees.** Primary kernel names do not rename. Same name keeps the same intention. New power is additive or versioned. Authority fails closed. Ending an Activity or revoking a Cap has a **defined reverse story**: inverse where possible, else compensation under a recovery Cap, else an explicit non-reversible mark. That story is not a promise of perfect undo. Kernel changes follow this process.
+## Stability guarantees
 
-**Stability non-guarantees**
+Primary kernel names do not rename. Same name keeps the same intention. New power is additive or versioned. Authority fails closed. Ending an Activity or revoking a Cap has a **defined reverse story**: inverse where possible, else compensation under a recovery Cap, else an explicit non-reversible mark. That story is not a promise of perfect undo. Kernel changes follow this process.
+
+## Stability non-guarantees
 
 | Non-guarantee | Note |
 |---------------|------|
