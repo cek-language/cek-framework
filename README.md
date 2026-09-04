@@ -18,6 +18,7 @@ Axioms live in [LAW.md §2](LAW.md#2-axioms). CHARTER lock: README must not drif
 |----------|------|
 | Tutorial (~5 min) | [START.md](START.md) |
 | Explanation (why, not how) | [EXPLAIN.md](EXPLAIN.md) |
+| Visuals | [diagrams/](diagrams/) — [Path](diagrams/01-path.svg) · [Host ≠ Peer](diagrams/02-host-peer.svg) · [Cap vs trace vs Activity](diagrams/03-cap-trace-activity.svg) · [authorized vs landed](diagrams/04-authorized-landed-reverse.svg) · [layers](diagrams/05-layers.svg) · [refuse path](diagrams/06-refuse-path.svg) |
 | How-to | [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md) |
 | Law (reference) | [LAW.md](LAW.md) |
 | Names | [VOCABULARY.md](VOCABULARY.md) |

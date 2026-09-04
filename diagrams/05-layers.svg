@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Layers</title>
+  <desc id="d">L0 Law axioms plus Baseline; L1 Kernels Host and Peer; L2 Bound work Activity Context inject limit isolate lineage reverse part; L3 Correlate trace; L4 Negotiate profile; L5 Drivers domain Ops; L6 Policy optional; L7 Application product logic.</desc>
+  <rect width="720" height="560" fill="#FFFFFF"/>
+  <defs>
+    <marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C656E"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" fill="#1B2328" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">Layers</text>
+  <text x="24" y="48" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">L0-L7. Lower never depends on higher.</text>
+  <rect x="24" y="68" width="672" height="52" rx="6" ry="6" fill="#E8EAEE" stroke="#1B2328" stroke-width="2.0"/>
+  <text x="44" y="100" fill="#1B2328" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L0</text>
+  <text x="92" y="100" fill="#1B2328" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Law</text>
+  <text x="220" y="100" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">axioms + Baseline</text>
+  <rect x="24" y="126" width="672" height="52" rx="6" ry="6" fill="#E7F1FB" stroke="#0B4F8A" stroke-width="1.4"/>
+  <text x="44" y="158" fill="#0B3D6B" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L1</text>
+  <text x="92" y="158" fill="#0B3D6B" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Kernels</text>
+  <text x="220" y="158" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Host · Peer</text>
+  <rect x="24" y="184" width="672" height="52" rx="6" ry="6" fill="#F3ECF8" stroke="#6B3D8C" stroke-width="1.4"/>
+  <text x="44" y="216" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L2</text>
+  <text x="92" y="216" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Bound work</text>
+  <text x="220" y="206" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Activity · Context · inject · limit</text>
+  <text x="220" y="224" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">isolate · lineage · reverse · part</text>
+  <rect x="24" y="242" width="672" height="52" rx="6" ry="6" fill="#F6F8FA" stroke="#6E7781" stroke-width="1.4"/>
+  <text x="44" y="274" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L3</text>
+  <text x="92" y="274" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Correlate</text>
+  <text x="220" y="274" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">trace</text>
+  <rect x="24" y="300" width="672" height="52" rx="6" ry="6" fill="#F7F0E4" stroke="#8A5A12" stroke-width="1.4"/>
+  <text x="44" y="332" fill="#633E08" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L4</text>
+  <text x="92" y="332" fill="#633E08" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Negotiate</text>
+  <text x="220" y="332" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">profile</text>
+  <rect x="24" y="358" width="672" height="52" rx="6" ry="6" fill="#E6F4EA" stroke="#1A6B38" stroke-width="1.4"/>
+  <text x="44" y="390" fill="#14532D" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L5</text>
+  <text x="92" y="390" fill="#14532D" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Drivers</text>
+  <text x="220" y="390" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">domain Ops</text>
+  <rect x="24" y="416" width="672" height="52" rx="6" ry="6" fill="#F6F8FA" stroke="#5C656E" stroke-width="1.4"/>
+  <text x="44" y="448" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L6</text>
+  <text x="92" y="448" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Policy</text>
+  <text x="220" y="448" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">optional</text>
+  <rect x="24" y="474" width="672" height="52" rx="6" ry="6" fill="#F6F8FA" stroke="#5C656E" stroke-width="1.4"/>
+  <text x="44" y="506" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">L7</text>
+  <text x="92" y="506" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start">Application</text>
+  <text x="220" y="506" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">product logic</text>
+</svg>
