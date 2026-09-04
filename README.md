@@ -2,73 +2,35 @@
 
 **Who may change a shared world, how the change is listed, and how it is undone.**
 
-Shared-world change is Cap-only and Ops-only, with a defined reverse story (lineage, compensation, or a non-reversible mark) — not perfect undo of the external world. Official name: **CEK**. **Ops** is the ordered effect list (data), not the language name.
+Official name: **CEK**. **Ops** is the ordered effect list (data), not the language name.
 
 This repository is the **canonical published Single Source of Truth** for CEK-framework **law**. It is not a package, crate, or kernel. Implementations claim alignment against this law; they do not amend it by shipping code.
 
-| Law | Vocabulary | Alignment | Amendment |
-|-----|------------|-----------|-----------|
-| [LAW.md](LAW.md) | [VOCABULARY.md](VOCABULARY.md) | [KILL.md](KILL.md) | [CHARTER.md](CHARTER.md) |
-
 **Path.** Mint Cap → submit Intent → Host verify → Result{Ops} → Peer apply → Activity bounds work → lineage records causes → end/revoke → reverse (or mark non-reversible) → trace groups steps only → Baseline always still works.
 
----
-
-## Nouns and verbs
-
-| Noun | Meaning | Verb | Job |
-|------|---------|------|-----|
-| **Cap** | Permission to submit a class of Intent | **mint** | Create a Cap |
-| **Intent** | Sealed ask under a Cap | **submit** | Send an Intent under a Cap |
-| **Host** | Verifies Cap; decides; returns Result | **apply** | Carry out Ops |
-| **Peer** | Applies Ops only | **inject** | Declare Activity requirements |
-| **Ops** | Ordered effects as data | **limit** | Restrict what may be seen or done |
-| **Result** | Host answer to an Intent | **isolate** | Separate a Context slice |
-| **Activity** | Bounded work; reverse on end | **reverse** | Undo lineage / end cleanly |
-| **Context** | Mediated visibility, not ambient authority | | |
-| **lineage** | Cause trail under Cap / Activity | | |
-| **Baseline** | Permanent interop contract | | |
-| **profile** | Declared Peer apply ability — never Cap | | |
-| **part** | Composition unit loaded under a Cap | | |
-| **trace** | Correlation of Intents — never permission | | |
+Axioms live in [LAW.md §2](LAW.md#2-axioms). CHARTER lock: README must not drift from LAW.
 
 ---
 
-## Axioms A1–A10
+## Map (Diátaxis)
 
-Constitutional. Features may not relax them without [CHARTER](CHARTER.md) amendment.
+| You want | Open |
+|----------|------|
+| Tutorial (~5 min) | [START.md](START.md) |
+| Explanation (why, not how) | [EXPLAIN.md](EXPLAIN.md) |
+| Law (reference) | [LAW.md](LAW.md) |
+| Names | [VOCABULARY.md](VOCABULARY.md) |
+| Alignment | [KILL.md](KILL.md) |
+| Amendment | [CHARTER.md](CHARTER.md) |
+| Encoding notes (off-law) | [IMPLEMENTATION.md](IMPLEMENTATION.md) |
 
-| ID | Name | Statement |
-|----|------|-----------|
-| **A1** | Cap-only truth | The only proof of authority is a verified Cap. Sessions, mesh membership, and ambient Context never suffice alone. |
-| **A2** | Ops-only effects | The only side-effects at the kernel boundary are explicit ordered Ops. |
-| **A3** | Lineage accountability | Every carried-out change under a revocable Cap or endable Activity is recorded in lineage. |
-| **A4** | Baseline permanent | The Baseline contract never silently breaks; power is additive or explicitly versioned. |
-| **A5** | Fail closed | Failed Cap verification, missing required once-store, or required lineage write failure refuses the action. |
-| **A6** | Trace ≠ authority | A trace only groups Intents; it never grants permission. |
-| **A7** | Peer unprivileged | A Peer applies Ops; it does not mint root Caps or invent business truth. |
-| **A8** | Attenuation monotonic | limit and isolate only narrow authority or visibility; they never widen it. |
-| **A9** | Composition authorized | Opening an Activity or loading a part is Cap-gated (or uses an explicit minimal bootstrap root). |
-| **A10** | One concept, one name | The kernel has no synonyms; documentation and code use the same primary names. |
+## How-to stubs
+
+- Claim CEK alignment → [KILL.md](KILL.md)
+- Name a thing → [VOCABULARY.md](VOCABULARY.md)
+- Amend law → [CHARTER.md](CHARTER.md)
 
 ---
-
-## Layers and roles
-
-```text
-L0  Law         axioms + Baseline
-L1  Kernels     Host · Peer
-L2  Bound work  Activity · Context · inject · limit · isolate · lineage · reverse · part
-L3  Correlate   trace
-L4  Negotiate   profile
-L5  Drivers     domain Ops
-L6  Policy      optional
-L7  Application product logic
-```
-
-Exactly two L1 kernels. **Host** decides (mint, verify, lineage, project, Result). **Peer** applies Ops. There is no third kernel. Host and Peer must not collapse into one privileged role. Changing **trace** meaning (L3) is kernel meaning: major version + dual-speak ([LAW.md](LAW.md) § change).
-
-L5–L7 and optional L6 that does not relax axioms may move without amendment. A third conceptual parent that redefines L0–L2 is forbidden.
 
 | This repo **is** | This repo **is not** |
 |------------------|----------------------|
