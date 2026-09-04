@@ -40,6 +40,8 @@ Decide and apply are different duties. [LAW.md §4](LAW.md#4-host-and-peer) spli
 
 ![Host ≠ Peer](diagrams/02-host-peer.svg)
 
+Pedagogical submit / apply order (not law): [PSEUDOCODE.md](PSEUDOCODE.md).
+
 The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A7). Collapsing Host and Peer into one privileged role requires a [CHARTER.md](CHARTER.md) amendment.
 
 Alignment gate: [KILL.md K3](KILL.md#instant-disqualification).
