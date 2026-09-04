@@ -1,6 +1,6 @@
 # Practice — when designing a kernel
 
-Short rules for kernel authors. Not law, not a second axiom book. The alignment gate is [KILL.md](KILL.md). How to claim alignment: [HOWTO-ALIGN.md](HOWTO-ALIGN.md). Concepts: [CONCEPTS.md](CONCEPTS.md).
+Short rules for kernel authors. Not law, not a second axiom book. The alignment gate is [KILL.md](KILL.md). How to claim alignment: [HOWTO-ALIGN.md](HOWTO-ALIGN.md). Concepts: [CONCEPTS.md](CONCEPTS.md). Where Host decide vs Peer apply lives (browser Peer + server Host, MCU as Peer, Cap across two Hosts): [README.md — Leverage](README.md#leverage).
 
 ## When designing a kernel
 

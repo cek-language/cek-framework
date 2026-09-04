@@ -36,6 +36,22 @@ CEK is the locked law of authorized change across boundaries: how programs ask, 
 
 Five-minute walk: [START.md](START.md).
 
+## Leverage
+
+Where **Host** decide vs **Peer** apply lives. Same two roles; placement is free. Not a third kernel. [TOPOLOGY.md](TOPOLOGY.md) · [PRACTICE.md](PRACTICE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
+
+### Browser Peer + server Host
+
+**Host** decide lives on the server: mint/verify **Cap**, return **Result{Ops}**. **Peer** apply lives in the browser: carry out those Ops only. UI is L5 on the Peer outer, not a Host. [TOPOLOGY.md](TOPOLOGY.md) · [PRACTICE.md](PRACTICE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
+
+### MCU as Peer
+
+The MCU is **Peer**: apply **Ops** only — no mint, no invented truth. **Host** decide lives off-device (another process). Hardware is topology, not a third kernel; device drivers stay L5 on the Peer outer. [TOPOLOGY.md](TOPOLOGY.md) · [PRACTICE.md](PRACTICE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
+
+### Cap across two Hosts
+
+Each **Host** still decides in its own domain; each **Peer** still applies. A **Cap** minted under one Host’s policy is not automatically authority on another Host — cross-Host acceptance needs explicit shared verify policy (default: separate trust domains). Hops do not add a third role. [TOPOLOGY.md](TOPOLOGY.md) · [PRACTICE.md](PRACTICE.md)
+
 ## Is / is not
 
 | This repo **is** | This repo **is not** |
