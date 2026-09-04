@@ -18,17 +18,18 @@ Axioms live in [LAW.md §2](LAW.md#2-axioms). CHARTER lock: README must not drif
 |----------|------|
 | Tutorial (~5 min) | [START.md](START.md) |
 | Explanation (why, not how) | [EXPLAIN.md](EXPLAIN.md) |
+| How-to | [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md) |
 | Law (reference) | [LAW.md](LAW.md) |
 | Names | [VOCABULARY.md](VOCABULARY.md) |
 | Alignment | [KILL.md](KILL.md) |
 | Amendment | [CHARTER.md](CHARTER.md) |
 | Encoding notes (off-law) | [IMPLEMENTATION.md](IMPLEMENTATION.md) |
 
-## How-to stubs
+## How-to
 
-- Claim CEK alignment → [KILL.md](KILL.md)
-- Name a thing → [VOCABULARY.md](VOCABULARY.md)
-- Amend law → [CHARTER.md](CHARTER.md)
+- Claim CEK alignment → [HOWTO-ALIGN.md](HOWTO-ALIGN.md)
+- Name a thing correctly → [HOWTO-NAME.md](HOWTO-NAME.md)
+- Amend law → [HOWTO-AMEND.md](HOWTO-AMEND.md)
 
 ---
 

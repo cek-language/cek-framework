@@ -4,6 +4,30 @@ Canonical published law of the Cap-Effect Meta-Language (CEK). Not a package. No
 
 bitplorer/cek-framework at commit [`eca06befbd0f30e93c47481f7aab3fae66d5a57f`](https://github.com/bitplorer/cek-framework/tree/eca06befbd0f30e93c47481f7aab3fae66d5a57f) is a **historical freeze** (provenance), not a living CORE. This repository is the published SSoT. Unique rules from that freeze (CORE 00–27) are preserved here; files are not copied verbatim. No new axioms.
 
+## Contents
+
+1. [Definition](#1-definition)
+2. [Axioms](#2-axioms)
+3. [Layers](#3-layers)
+4. [Host and Peer](#4-host-and-peer)
+5. [Cap](#5-cap)
+6. [Intent, Result, Ops](#6-intent-result-ops)
+7. [Sealed arguments](#7-sealed-arguments)
+8. [Activity and Context](#8-activity-and-context)
+9. [Lineage and reverse](#9-lineage-and-reverse)
+10. [Trace](#10-trace)
+11. [Baseline, profile, negotiation](#11-baseline-profile-negotiation)
+12. [Once and idempotency](#12-once-and-idempotency)
+13. [Recovery Cap](#13-recovery-cap)
+14. [Bootstrap](#14-bootstrap)
+15. [Security](#15-security)
+16. [Fail-closed defaults and corners](#16-fail-closed-defaults-and-corners)
+17. [Errors and concurrency](#17-errors-and-concurrency)
+18. [Change, versioning, extensibility](#18-change-versioning-extensibility)
+19. [Canonical story and scenarios](#19-canonical-story-and-scenarios)
+20. [Invariants](#20-invariants)
+21. [Conformance](#21-conformance)
+
 ---
 
 ## 1. Definition
