@@ -38,6 +38,8 @@ Alignment gate: [KILL.md K2](KILL.md#instant-disqualification).
 
 Decide and apply are different duties. [LAW.md §4](LAW.md#4-host-and-peer) splits them: **Host** verifies Cap, decides, returns Result; **Peer** applies Ops.
 
+![Host ≠ Peer](diagrams/02-host-peer.svg)
+
 The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A7). Collapsing Host and Peer into one privileged role requires a [CHARTER.md](CHARTER.md) amendment.
 
 Alignment gate: [KILL.md K3](KILL.md#instant-disqualification).
@@ -50,6 +52,8 @@ Alignment gate: [KILL.md K3](KILL.md#instant-disqualification).
 
 Read the comparison in [VOCABULARY.md — Cap vs trace vs Activity](VOCABULARY.md#cap-vs-trace-vs-activity). Law: [LAW.md §8](LAW.md#8-activity-and-context), [LAW.md §10](LAW.md#10-trace), and [LAW.md §2](LAW.md#2-axioms) (A6).
 
+![Cap ≠ trace ≠ Activity](diagrams/03-cap-trace-activity.svg)
+
 Treating a trace as permission or as execute fails [KILL.md K4](KILL.md#instant-disqualification). Ending work still reverses **lineage** under Activity / Cap, not under a trace: [LAW.md §9](LAW.md#9-lineage-and-reverse).
 
 ---
@@ -60,6 +64,8 @@ End and revoke need a defined reverse story. That story is not a promise of perf
 
 Read the guarantee and the non-guarantee in [CHARTER.md Stability guarantees](CHARTER.md#stability-guarantees) and [Stability non-guarantees](CHARTER.md#stability-non-guarantees). Forms: [LAW.md §9](LAW.md#9-lineage-and-reverse) and [LAW.md §13 Recovery Cap](LAW.md#13-recovery-cap).
 
+![Authorized vs landed · reverse](diagrams/04-authorized-landed-reverse.svg)
+
 Silent “fully reversed” when inverse/compensation failed is a kill: [KILL.md K12](KILL.md#soft-fail).
 
 ---
@@ -69,6 +75,14 @@ Silent “fully reversed” when inverse/compensation failed is a kill: [KILL.md
 Interop must not be a flag day. [LAW.md §1](LAW.md#1-definition) names that problem; [LAW.md §11](LAW.md#11-baseline-profile-negotiation) is the contract.
 
 The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A4). Read it there. Silently breaking Baseline for correct old Host/Peer pairs fails [KILL.md K9](KILL.md#instant-disqualification). Breaking Baseline interop requires a [CHARTER.md](CHARTER.md) amendment.
+
+---
+
+## Layers
+
+The stack is [LAW.md §3](LAW.md#3-layers). This page does not restate it.
+
+![Layers](diagrams/05-layers.svg)
 
 ---
 

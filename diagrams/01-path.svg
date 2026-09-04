@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 760" width="720" height="760" role="img" aria-labelledby="t d">
+  <title id="t">Path</title>
+  <desc id="d">Path: Cap, Intent, Host, Result with Ops, Peer, Activity, lineage, reverse. trace groups related Intents only; not a step with power.</desc>
+  <rect width="720" height="760" fill="#FFFFFF"/>
+  <defs>
+    <marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#5C656E"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" fill="#1B2328" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start">Path</text>
+  <text x="24" y="48" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" text-anchor="start">Cap -&gt; Intent -&gt; Host -&gt; Result{Ops} -&gt; Peer -&gt; Activity -&gt; lineage -&gt; reverse</text>
+  <rect x="24" y="68" width="672" height="58" rx="8" ry="8" fill="#EEF0F8" stroke="#3D4A7A" stroke-width="1.6"/>
+  <rect x="34" y="82" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#3D4A7A" stroke-width="1.2"/>
+  <text x="48" y="102" fill="#2C3658" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">1</text>
+  <text x="76" y="94" fill="#2C3658" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Cap</text>
+  <text x="76" y="112" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Permission to submit that Intent</text>
+  <line x1="48" y1="126" x2="48" y2="142" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="144" width="672" height="58" rx="8" ry="8" fill="#F4F2EE" stroke="#5C5346" stroke-width="1.6"/>
+  <rect x="34" y="158" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#5C5346" stroke-width="1.2"/>
+  <text x="48" y="178" fill="#3D372E" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">2</text>
+  <text x="76" y="170" fill="#3D372E" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Intent</text>
+  <text x="76" y="188" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Sealed ask to change something</text>
+  <line x1="48" y1="202" x2="48" y2="218" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="220" width="672" height="58" rx="8" ry="8" fill="#E7F1FB" stroke="#0B4F8A" stroke-width="1.6"/>
+  <rect x="34" y="234" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#0B4F8A" stroke-width="1.2"/>
+  <text x="48" y="254" fill="#0B3D6B" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">3</text>
+  <text x="76" y="246" fill="#0B3D6B" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Host</text>
+  <text x="76" y="264" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Verifies Cap and decides truth</text>
+  <line x1="48" y1="278" x2="48" y2="294" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="296" width="672" height="58" rx="8" ry="8" fill="#F7F0E4" stroke="#8A5A12" stroke-width="1.6"/>
+  <rect x="34" y="310" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#8A5A12" stroke-width="1.2"/>
+  <text x="48" y="330" fill="#633E08" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">4</text>
+  <text x="76" y="322" fill="#633E08" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Result{Ops}</text>
+  <text x="76" y="340" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Answer to an Intent · ordered carry-out list</text>
+  <line x1="48" y1="354" x2="48" y2="370" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="372" width="672" height="58" rx="8" ry="8" fill="#E6F4EA" stroke="#1A6B38" stroke-width="1.6"/>
+  <rect x="34" y="386" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#1A6B38" stroke-width="1.2"/>
+  <text x="48" y="406" fill="#14532D" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">5</text>
+  <text x="76" y="398" fill="#14532D" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Peer</text>
+  <text x="76" y="416" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Only applies Ops</text>
+  <line x1="48" y1="430" x2="48" y2="446" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="448" width="672" height="58" rx="8" ry="8" fill="#F3ECF8" stroke="#6B3D8C" stroke-width="1.6"/>
+  <rect x="34" y="462" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#6B3D8C" stroke-width="1.2"/>
+  <text x="48" y="482" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">6</text>
+  <text x="76" y="474" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">Activity</text>
+  <text x="76" y="492" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Bounded work that starts, ends, and can be reversed</text>
+  <line x1="48" y1="506" x2="48" y2="522" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="524" width="672" height="58" rx="8" ry="8" fill="#F3ECF8" stroke="#6B3D8C" stroke-width="1.6"/>
+  <rect x="34" y="538" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#6B3D8C" stroke-width="1.2"/>
+  <text x="48" y="558" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">7</text>
+  <text x="76" y="550" fill="#4A2863" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">lineage</text>
+  <text x="76" y="568" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Cause trail under Cap / Activity for undo</text>
+  <line x1="48" y1="582" x2="48" y2="598" stroke="#5C656E" stroke-width="1.5" marker-end="url(#a1)"/>
+  <rect x="24" y="600" width="672" height="58" rx="8" ry="8" fill="#FBECE6" stroke="#A14422" stroke-width="1.6"/>
+  <rect x="34" y="614" width="28" height="28" rx="6" ry="6" fill="#FFFFFF" stroke="#A14422" stroke-width="1.2"/>
+  <text x="48" y="634" fill="#7A2E14" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">8</text>
+  <text x="76" y="626" fill="#7A2E14" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">reverse</text>
+  <text x="76" y="644" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Undo lineage / end Activity cleanly</text>
+  <rect x="24" y="684" width="672" height="70" rx="8" ry="8" fill="#F6F8FA" stroke="#6E7781" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="44" y="712" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start">trace</text>
+  <text x="44" y="734" fill="#4A5560" font-family="Noto Sans, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">Groups related Intents only - not a step with power. Does not grant, apply, or reverse.</text>
+</svg>
