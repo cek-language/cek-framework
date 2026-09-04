@@ -43,9 +43,9 @@ Use frozen names. Gloss is once, here; it does not mint a second official langua
 
 1. **Cap** — mint. Permission to submit a class of Intent. [LAW.md §5](LAW.md#5-cap) · [VOCABULARY.md](VOCABULARY.md#frozen-nouns)
 2. **Intent** — submit a sealed ask under that Cap. [LAW.md §6](LAW.md#6-intent-result-ops) · [VOCABULARY.md](VOCABULARY.md#frozen-nouns)
-3. **Host verify** — Host verifies the Cap (pipeline before shared-world effects). [LAW.md §4](LAW.md#4-host-and-peer) · [KILL.md K5](KILL.md#instant-disqualification) · [Host ≠ Peer](diagrams/02-host-peer.svg)
+3. **Host verify** — Host verifies the Cap (pipeline before shared-world effects). [LAW.md §4](LAW.md#4-host-and-peer) · [KILL.md K5](KILL.md#instant-disqualification) · [Host ≠ Peer](diagrams/02-host-peer.svg) · [PSEUDOCODE.md](PSEUDOCODE.md)
 4. **Result{Ops}** — Host returns a Result whose carry-out list is ordered **Ops** (data, not the language name). [LAW.md §6](LAW.md#6-intent-result-ops) · [VOCABULARY.md](VOCABULARY.md)
-5. **Peer apply** — Peer carries out those Ops. Peer is not Host. [LAW.md §4](LAW.md#4-host-and-peer) · [KILL.md K3](KILL.md#instant-disqualification) · [Host ≠ Peer](diagrams/02-host-peer.svg)
+5. **Peer apply** — Peer carries out those Ops. Peer is not Host. [LAW.md §4](LAW.md#4-host-and-peer) · [KILL.md K3](KILL.md#instant-disqualification) · [Host ≠ Peer](diagrams/02-host-peer.svg) · [PSEUDOCODE.md](PSEUDOCODE.md)
 6. **Activity** — bounded work: opens, runs, ends. [LAW.md §8](LAW.md#8-activity-and-context) · [VOCABULARY.md](VOCABULARY.md#frozen-nouns)
 7. **lineage** — cause trail under Cap / Activity. [LAW.md §9](LAW.md#9-lineage-and-reverse) · [VOCABULARY.md](VOCABULARY.md#frozen-nouns)
 8. **reverse (or mark)** — on end or revoke, reverse the lineage; if inverse and compensation cannot complete, mark non-reversible. Never silent success. [LAW.md §9](LAW.md#9-lineage-and-reverse) · [LAW.md §13 Recovery Cap](LAW.md#13-recovery-cap) · [KILL.md K12](KILL.md#soft-fail) · [CHARTER.md non-guarantees](CHARTER.md#stability-non-guarantees) · [authorized vs landed](diagrams/04-authorized-landed-reverse.svg)
@@ -69,5 +69,6 @@ These three are not interchangeable. Read the comparison; this page does not cop
 ## Next
 
 - Why the splits exist: [EXPLAIN.md](EXPLAIN.md) · [layers](diagrams/05-layers.svg)
+- Submit / apply order (not law): [PSEUDOCODE.md](PSEUDOCODE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
 - Map: [README.md](README.md)
 - How-to: [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md)

@@ -54,6 +54,7 @@ Kernels implement elsewhere. Domain apply catalogs stay L5 — they are not Host
 | Concepts | [CONCEPTS.md](CONCEPTS.md) |
 | Explanation (why, not how) | [EXPLAIN.md](EXPLAIN.md) |
 | Visuals | [diagrams/](diagrams/) — [Path](diagrams/01-path.svg) · [Host ≠ Peer](diagrams/02-host-peer.svg) · [Cap vs trace vs Activity](diagrams/03-cap-trace-activity.svg) · [authorized vs landed](diagrams/04-authorized-landed-reverse.svg) · [layers](diagrams/05-layers.svg) · [refuse path](diagrams/06-refuse-path.svg) |
+| Pseudocode | [PSEUDOCODE.md](PSEUDOCODE.md) |
 | How-to | [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md) |
 | Practice | [PRACTICE.md](PRACTICE.md) |
 | Law (reference) | [LAW.md](LAW.md) |
