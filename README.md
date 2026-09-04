@@ -6,6 +6,8 @@ Shared-world change stays *answerable*: who authorized it, how it is listed, and
 
 Official name: **CEK**. **Ops** is the ordered effect list (data), not the language name.
 
+**Status.** Law published. Kernels implement elsewhere.
+
 ## What this repo does
 
 This repository publishes the canonical CEK **law**: frozen names, axioms, and kill criteria. It is not a package, crate, or kernel. Kernels implement elsewhere and claim alignment against this law; they do not amend it by shipping code.
@@ -49,9 +51,11 @@ Kernels implement elsewhere. Domain apply catalogs stay L5 — they are not Host
 | You want | Open |
 |----------|------|
 | Tutorial (~5 min) | [START.md](START.md) |
+| Concepts | [CONCEPTS.md](CONCEPTS.md) |
 | Explanation (why, not how) | [EXPLAIN.md](EXPLAIN.md) |
 | Visuals | [diagrams/](diagrams/) — [Path](diagrams/01-path.svg) · [Host ≠ Peer](diagrams/02-host-peer.svg) · [Cap vs trace vs Activity](diagrams/03-cap-trace-activity.svg) · [authorized vs landed](diagrams/04-authorized-landed-reverse.svg) · [layers](diagrams/05-layers.svg) · [refuse path](diagrams/06-refuse-path.svg) |
 | How-to | [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md) |
+| Practice | [PRACTICE.md](PRACTICE.md) |
 | Law (reference) | [LAW.md](LAW.md) |
 | Names | [VOCABULARY.md](VOCABULARY.md) |
 | Alignment | [KILL.md](KILL.md) |
