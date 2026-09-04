@@ -14,9 +14,11 @@ Do not invent axioms here. Do not copy [LAW.md §2](LAW.md#2-axioms) into anothe
 
 ## Why Cap-only
 
-[LAW.md §1](LAW.md#1-definition) names the problem: ambient authority. If permission is ambient, revoke and attenuation have nothing to bind.
+Ambient authority is the failure. If being “in the room” is enough to change a shared world, revoke has nothing to bind.
 
-The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A1). Read it there. Do not take a paraphrase from this page.
+**Cap** is permission to submit a class of Intent. A session, receipt, or **trace** is not that permission.
+
+[LAW.md §1](LAW.md#1-definition) names the problem. The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A1) — read it there; this page does not copy that table.
 
 Alignment gates: [KILL.md K1](KILL.md#instant-disqualification); [KILL.md K4](KILL.md#instant-disqualification) if **trace** is treated as permission.
 
@@ -26,9 +28,11 @@ Bootstrap is the documented origin of Caps, not a standing second path: [LAW.md 
 
 ## Why Ops-only
 
-[LAW.md §1](LAW.md#1-definition) names the problem: free side-effects. If mutation is not listed, reverse has no authorized set to walk.
+Free side-effects are the failure. If mutation happens off the list, **reverse** has no authorized set to walk.
 
-The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A2). Read it there. Carry-out is listed as ordered **Ops** in a **Result**: [LAW.md §6](LAW.md#6-intent-result-ops). **Ops** is data, not the language name ([VOCABULARY.md](VOCABULARY.md)).
+Carry-out is listed as ordered **Ops** in a **Result** ([LAW.md §6](LAW.md#6-intent-result-ops)). That list is data, not the language name ([VOCABULARY.md](VOCABULARY.md)).
+
+[LAW.md §1](LAW.md#1-definition) names the problem. The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A2) — read it there; this page does not copy that table.
 
 Alignment gate: [KILL.md K2](KILL.md#instant-disqualification).
 
@@ -36,7 +40,9 @@ Alignment gate: [KILL.md K2](KILL.md#instant-disqualification).
 
 ## Why Host ≠ Peer
 
-Decide and apply are different duties. [LAW.md §4](LAW.md#4-host-and-peer) splits them: **Host** verifies Cap, decides, returns Result; **Peer** applies Ops.
+Decide vs apply collapse is the failure. If one privileged role both allows the change and carries it out, that side can mint or invent truth.
+
+[LAW.md §4](LAW.md#4-host-and-peer) splits the duties: **Host** verifies Cap, decides, returns Result; **Peer** applies Ops.
 
 ![Host ≠ Peer](diagrams/02-host-peer.svg)
 
@@ -52,6 +58,8 @@ Placement across processes and devices: [TOPOLOGY.md](TOPOLOGY.md).
 
 ## Why trace ≠ Activity
 
+Permission-as-correlation is the failure. If a grouping id is treated as permission, expired Caps come back to life.
+
 **trace** correlates Intents. **Activity** bounds work and owns reverse on end. **Cap** is permission. They answer different questions; this page does not copy the comparison table.
 
 Read the comparison in [VOCABULARY.md — Cap vs trace vs Activity](VOCABULARY.md#cap-vs-trace-vs-activity). Law: [LAW.md §8](LAW.md#8-activity-and-context), [LAW.md §10](LAW.md#10-trace), and [LAW.md §2](LAW.md#2-axioms) (A6).
@@ -64,7 +72,9 @@ Treating a trace as permission or as execute fails [KILL.md K4](KILL.md#instant-
 
 ## Why reverse ≠ perfect undo
 
-End and revoke need a defined reverse story. That story is not a promise of perfect undo of the external world.
+Fake perfect undo is the failure. Saying the change is fully undone when the external world cannot invert hides leftover change.
+
+End and revoke need a defined reverse story — inverse, compensation under a recovery Cap, or an explicit non-reversible mark. That story is not a promise of perfect undo of the external world.
 
 Read the guarantee and the non-guarantee in [CHARTER.md Stability guarantees](CHARTER.md#stability-guarantees) and [Stability non-guarantees](CHARTER.md#stability-non-guarantees). Forms: [LAW.md §9](LAW.md#9-lineage-and-reverse) and [LAW.md §13 Recovery Cap](LAW.md#13-recovery-cap).
 
@@ -76,13 +86,19 @@ Silent “fully reversed” when inverse/compensation failed is a kill: [KILL.md
 
 ## Why Baseline permanence
 
-Interop must not be a flag day. [LAW.md §1](LAW.md#1-definition) names that problem; [LAW.md §11](LAW.md#11-baseline-profile-negotiation) is the contract.
+Flag-day break is the failure. Silently dropping ability for correct old Host/Peer pairs splits the shared contract overnight.
 
-The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A4). Read it there. Silently breaking Baseline for correct old Host/Peer pairs fails [KILL.md K9](KILL.md#instant-disqualification). Breaking Baseline interop requires a [CHARTER.md](CHARTER.md) amendment.
+**Baseline** is the permanent shared contract every correct pair supports.
+
+[LAW.md §1](LAW.md#1-definition) names that problem; [LAW.md §11](LAW.md#11-baseline-profile-negotiation) is the contract. The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A4) — read it there; this page does not copy that table.
+
+Silently breaking Baseline for correct old Host/Peer pairs fails [KILL.md K9](KILL.md#instant-disqualification). Breaking Baseline interop requires a [CHARTER.md](CHARTER.md) amendment.
 
 ---
 
 ## Layers
+
+Lower never depends on higher. Domain drivers live at L5; they are not Hosts.
 
 The stack is [LAW.md §3](LAW.md#3-layers). This page does not restate it.
 

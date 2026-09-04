@@ -40,9 +40,17 @@ Five-minute walk: [START.md](START.md).
 
 Where **Host** decide vs **Peer** apply lives. Same two roles; placement is free. Not a third kernel. [TOPOLOGY.md](TOPOLOGY.md) · [PRACTICE.md](PRACTICE.md) · [Host ≠ Peer](diagrams/02-host-peer.svg)
 
-- **Revoke-safe admin UI.** An admin UI that changes a shared world must not keep mutating after the admin’s **Cap** is revoked. **Cap** gates submit; **Host** returns **Result{Ops}**; the browser **Peer** applies those Ops (UI is L5 on the Peer outer, not a Host); **Activity** bounds the work; **lineage** records causes; **reverse** on revoke (or mark non-reversible). [TOPOLOGY.md](TOPOLOGY.md)
-- **Gated device control.** A device must not mint Caps or invent truth. **Cap** gates submit; **Host** decide lives off-device; the MCU is **Peer** — apply **Ops** only; **Activity** bounds the control; **lineage** stays Cap/Activity-accountable across hops when revocation spans them; **reverse** on revoke. Hardware is topology, not a third kernel; device drivers stay L5. [TOPOLOGY.md](TOPOLOGY.md)
-- **Multi-tenant change + reverse.** Several tenants change one shared world; ending one tenant’s work must reverse that cause without treating one Host’s **Cap** as authority on another. **Cap** stays in one Host’s domain; **Ops** list the change; **Activity** bounds the work; **lineage** + **reverse** on end or revoke; cross-Host acceptance needs explicit shared verify policy (default: separate trust domains). [TOPOLOGY.md](TOPOLOGY.md)
+### Revoke-safe admin UI
+
+An admin UI that changes a shared world must not keep mutating after the admin’s **Cap** is revoked. **Host** returns **Result{Ops}**; the browser **Peer** applies that list (UI is L5 on the Peer outer, not a Host). **Activity** bounds the work; **lineage** records causes; **reverse** on revoke (or mark non-reversible). [TOPOLOGY.md](TOPOLOGY.md).
+
+### Gated device control
+
+A device must not mint Caps or invent truth. **Cap** gates submit; **Host** decide lives off-device; the MCU is **Peer** — apply **Ops** only. **Activity** bounds the control; **lineage** stays Cap/Activity-accountable across hops when revocation spans them; **reverse** on revoke. Hardware is topology, not a third kernel; device drivers stay L5. [TOPOLOGY.md](TOPOLOGY.md).
+
+### Multi-tenant change + reverse
+
+Several tenants change one shared world. Ending one tenant’s work must reverse that cause, without treating one Host’s **Cap** as authority on another. **Ops** list the change; **Activity** bounds the work; **lineage** plus **reverse** on end or revoke. Cross-Host acceptance needs explicit shared verify policy (default: separate trust domains). [TOPOLOGY.md](TOPOLOGY.md).
 
 ### Browser Peer + server Host
 
