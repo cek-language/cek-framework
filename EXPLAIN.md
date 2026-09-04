@@ -76,4 +76,5 @@ The constitutional answer is [LAW.md §2](LAW.md#2-axioms) (A4). Read it there. 
 
 - Tutorial walk: [START.md](START.md)
 - Map: [README.md](README.md)
+- How-to: [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md)
 - Law: [LAW.md](LAW.md)

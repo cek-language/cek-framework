@@ -78,3 +78,4 @@ Primary kernel names do not rename. Same name keeps the same intention. New powe
 | Date | Change | Rationale |
 |------|--------|-----------|
 | 2026-09-03 | Publish this repo as SSoT law (README, LAW, VOCABULARY, KILL, CHARTER) | Distill of freeze `eca06befbd0f30e93c47481f7aab3fae66d5a57f`; no axiom invented or dropped |
+| 2026-09-04 | **Editorial** (not an amendment, not a thaw): PR #2 docs IA — START.md / EXPLAIN.md / README Diátaxis map; CHARTER nav lock retarget (README must not drift from LAW; Stability headings for anchors). Law meaning unchanged. | Presentation only. No axiom invented, dropped, or restated. |

@@ -64,5 +64,4 @@ These three are not interchangeable. Read the comparison; this page does not cop
 
 - Why the splits exist: [EXPLAIN.md](EXPLAIN.md)
 - Map: [README.md](README.md)
-- Claim alignment: [KILL.md](KILL.md)
-- Amend law: [CHARTER.md](CHARTER.md)
+- How-to: [HOWTO-ALIGN.md](HOWTO-ALIGN.md) · [HOWTO-NAME.md](HOWTO-NAME.md) · [HOWTO-AMEND.md](HOWTO-AMEND.md)
